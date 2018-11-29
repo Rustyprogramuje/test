@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/harry_potter">
+
+    <TextView
+            android:id="@+id/hp_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0D0D26"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Harry Potter Quote Of The Day"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:typeface="serif" />
+
+    <Button
+            android:id="@+id/pick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:backgroundTint="#0D0D26"
+            android:text="Pick me a quote!"
+            android:textColor="@android:color/white" />
+
+    <TextView
+            android:id="@+id/lol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hp_title"
+            android:layout_marginTop="320dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:typeface="serif" />
+
+</RelativeLayout>
