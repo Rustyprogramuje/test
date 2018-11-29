@@ -2,6 +2,7 @@ package com.example.karolina.cojarobie
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import com.example.karolina.cosiedzieje.Punkt
 import com.example.karolina.cosiedzieje.R
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
@@ -10,7 +11,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView (R.layout.activity_main)
+        setContentView(R.layout.activity_main)
 
 
         zad1()
@@ -18,6 +19,15 @@ class MainActivity : AppCompatActivity() {
         zad2()
 
         zad3()
+
+        var punkt: Punkt = Punkt()
+        var punkt2: Punkt = Punkt()
+        var punkt3: Punkt = Punkt(x=2,y = 2 )
+        punkt.nazwa = "trdt"
+        punkt.obliczCudo()
+
+
+
 
 // Policz ile razy w talicy wystepuja azwy domow z HP
 
@@ -99,7 +109,6 @@ class MainActivity : AppCompatActivity() {
     private fun bmi(w: Int, h: Double) = w / (h * h)
 
 
-
     private fun zad1() {
         val a = "hej"
         val c = "Sylwia"
@@ -109,7 +118,48 @@ class MainActivity : AppCompatActivity() {
 
     private fun zad17() {
         val licz = arrayListOf<Int>(2, 5, 7, 15, 34, 35)
-        val wartosci = arrayListOf<Int>(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40)
+        val wartosci = arrayListOf<Int>(
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+        )
         for (i in wartosci) {
             val rand = List(6) { Random().nextInt(i) }.sorted()
             var traf = ""
@@ -127,7 +177,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun zad16() {
-        val prize = arrayListOf<String>("KoA", "Deserek", "Doctor Who", "Kino", "Spacer", "Wycieczka", "Piwo z laskami", "Spiż")
+        val prize =
+            arrayListOf<String>("KoA", "Deserek", "Doctor Who", "Kino", "Spacer", "Wycieczka", "Piwo z laskami", "Spiż")
         var myprize = ""
         val prizes = prize.size - 1
         for (i in prize.indices) {
@@ -280,7 +331,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun zad18() {
-        val tab = arrayListOf<String>("test", "gryffindor", "Gryffindor", "Slytherin", "SlYtHeRin", "juz widze twoja mine :D", "trydno dasz rade")
+        val tab = arrayListOf<String>(
+            "test",
+            "gryffindor",
+            "Gryffindor",
+            "Slytherin",
+            "SlYtHeRin",
+            "juz widze twoja mine :D",
+            "trydno dasz rade"
+        )
         val domy = arrayListOf<String>("gryffindor", "slytherin")
         var ilosc = 0
 
@@ -374,13 +433,19 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-
-
         //  tekst.text = result
     }
 
     private fun zad4() {
-        val tab = arrayListOf<String>("test", "gryffindor", "Gryffindor", "Slytherin", "SlYtHeRin", "juz widze twoja mine :D", "trydno dasz rade")
+        val tab = arrayListOf<String>(
+            "test",
+            "gryffindor",
+            "Gryffindor",
+            "Slytherin",
+            "SlYtHeRin",
+            "juz widze twoja mine :D",
+            "trydno dasz rade"
+        )
         val domy = arrayListOf<String>("gryffindor", "slytherin")
         domy.forEach {
             it.toUpperCase()
@@ -392,7 +457,6 @@ class MainActivity : AppCompatActivity() {
             }
 
         }
-
 
 
     }
