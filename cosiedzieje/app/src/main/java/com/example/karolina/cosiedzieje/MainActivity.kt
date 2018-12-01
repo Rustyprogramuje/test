@@ -2,16 +2,18 @@ package com.example.karolina.cojarobie
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import com.example.karolina.cosiedzieje.BMI
 import com.example.karolina.cosiedzieje.Punkt
 import com.example.karolina.cosiedzieje.R
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_start_page.*
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_start_page)
 
 
         zad1()
@@ -25,6 +27,8 @@ class MainActivity : AppCompatActivity() {
         var punkt3: Punkt = Punkt(x=2,y = 2 )
         punkt.nazwa = "trdt"
         punkt.obliczCudo()
+        var mojebmi: BMI = BMI(172.0,80.0)
+        //bmitekst.text = mojebmi.toString()
 
 
 
@@ -232,7 +236,7 @@ class MainActivity : AppCompatActivity() {
             val random = Random().nextInt(liczbazdan) + 1
             zdanie = zdania[random]
         }
-        lol.text = zdanie
+       // lol.text = zdanie
 
         // zad 4 sprawdz ile slow ma wylosowane zdanie i wypisz na ekran przedostatnie slowo
         // zad 5 dodaj obsluge kiedy zdanie ma tylko jedno slowo wtedy nie wypisuj nic

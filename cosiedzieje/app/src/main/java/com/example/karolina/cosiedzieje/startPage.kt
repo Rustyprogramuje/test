@@ -12,6 +12,14 @@ class startPage : AppCompatActivity() {
 
         val liczby = arrayListOf<Int>(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
         val suma = liczby.sum()
-        tekst.text = suma.toString()
+       // tekst.text = suma.toString()
+
+        var mojebmi = BMI(
+            1.72,
+            80.0
+        )
+        mojebmi.obliczbmi()
+       bmitekst.text = mojebmi.bmi.toString()
+
     }
 }
