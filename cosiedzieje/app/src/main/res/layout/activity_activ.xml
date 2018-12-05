@@ -14,7 +14,7 @@
             android:text="Harry Potter Quote Of The Day"
             android:textAlignment="center"
             android:textColor="@android:color/white"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="italic"
             android:typeface="serif" />
 
@@ -38,7 +38,7 @@
             android:layout_centerHorizontal="true"
             android:padding="10dp"
             android:textColor="@android:color/white"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="italic"
             android:typeface="serif" />
 

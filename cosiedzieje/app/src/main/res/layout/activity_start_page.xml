@@ -15,10 +15,11 @@
             android:id="@+id/bmitekst"
             android:textColor="@android:color/white"
             android:textAlignment="center"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:typeface="serif"
     />
+
 
 
 </LinearLayout>
