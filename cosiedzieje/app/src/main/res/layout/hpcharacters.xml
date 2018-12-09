@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:id="@+id/pokaz_czarodziejow"
+              android:text="@string/pokaz_czarodziejow"
+              android:padding="15dp"
+              android:layout_below="@id/wybierz_dom"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="15dp"/>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:id="@+id/wybierz_dom"
+            android:text="@string/wybierz_dom"
+            android:onClick="wybierz_dom"
+            android:layout_below="@+id/lista_domow"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+    />
+    <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lista_domow"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:entries="@array/lista_domow"/>
+
+</RelativeLayout>
