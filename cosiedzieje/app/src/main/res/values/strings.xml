@@ -3,6 +3,7 @@
     <string name="pokaz_czarodziejow"></string>
     <string name="wybierz_dom">Pokaż czarodziejów</string>
     <string name="gr">Gryffindor</string>
+    <string name="nagłówek">Wybierz aplikację</string>
     <string-array name="lista_domow">
         <item>Gryffindor</item>
         <item>Slytherin</item>
