@@ -11,16 +11,17 @@
             android:id="@+id/wybierz_dom"
             android:text="@string/wybierz_dom"
             android:onClick="wybierzdom"
-            android:layout_below="@+id/lista_domow"
+            android:layout_below="@+id/lista_domow3"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="15dp"
     />
     <Spinner
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/lista_domow"
+            android:id="@+id/lista_domow3"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="15dp"
-            android:entries="@array/lista_domow"/>
+            android:entries="@array/lista_domow"
+    />
 
 </RelativeLayout>

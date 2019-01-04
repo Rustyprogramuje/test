@@ -40,7 +40,9 @@ class CustomViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     fun bindItems(insta: insta_class) {
         val imie = itemView.findViewById<TextView>(R.id.imiepostaci) as TextView
         val dom = itemView.findViewById<TextView>(R.id.zjakiegodomu) as TextView
+        val cyt = itemView.findViewById<TextView>(R.id.cytat) as TextView
         imie.text = insta.imie
         dom.text = insta.dom
+        cyt.text = insta.cytat
     }
 }

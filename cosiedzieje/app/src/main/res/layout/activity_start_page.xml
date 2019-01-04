@@ -1,45 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:background="@drawable/start_page"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#e1e1e1"
               android:orientation="vertical">
     <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/bmitekst1"
-            android:textColor="@android:color/white"
+            android:textColor="#4a6084"
             android:textAlignment="center"
             android:textSize="20sp"
             android:textStyle="bold"
             android:typeface="serif"
-            android:text= "@string/nagłówek"
+            android:text="@string/nagłówek"
     />
     <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Harry Potter - Quote of the day"
             android:id="@+id/btn"
+            android:background="#9ca2c4"
+            android:layout_margin="8dp"
+            android:textColor="#292929"
     />
-    <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Harry Potter - Houses"
-            android:id="@+id/btn2"
-    />
+
     <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="BMI"
             android:id="@+id/btn3"
+            android:background="#9ca2c4"
+            android:layout_margin="8dp"
+            android:textColor="#292929"
     />
     <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Mikro-Insta"
             android:id="@+id/btn4"
-    />
+            android:background="#9ca2c4"
+            android:layout_margin="8dp"
+            android:textColor="#292929"
 
+    />
 
 
 </LinearLayout>

@@ -20,6 +20,6 @@
             android:id="@+id/lista_domow2"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="15dp"
-            />
+            android:entries="@array/lista_domow"/>
 
 </RelativeLayout>

@@ -17,10 +17,10 @@ class HP_Wizards_act : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.hpcharacters1)
-        //
 
 
-         fun wybierzdom() {
+
+         /*fun wybierzdom() {
             wybierz_dom.setOnClickListener {
                 //
 //            lista_domow.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
@@ -35,8 +35,11 @@ class HP_Wizards_act : AppCompatActivity() {
 //            }
                 pokaz_czarodziejow.text = "Gryffindor"
             }
-        }
+        }*/
 
+        val w = lista_domow3.onItemSelectedListener
+
+        pokaz_czarodziejow.text = w.toString()
 
     }
 }

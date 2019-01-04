@@ -33,11 +33,11 @@ class startPage : AppCompatActivity() {
         startActivity(intent)
         }
 
-        btn2.setOnClickListener {
+        /*btn2.setOnClickListener {
             val intent = Intent (this, HPHouses2::class.java)
             startActivity(intent)
 
-        }
+        }*/
         btn3.setOnClickListener {
             val intent = Intent (this, ObliczBMI::class.java)
             startActivity(intent)

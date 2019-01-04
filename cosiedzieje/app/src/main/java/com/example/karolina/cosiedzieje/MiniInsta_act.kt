@@ -19,9 +19,11 @@ class MiniInsta_act : AppCompatActivity() {
         val recycler = findViewById<RecyclerView>(R.id.recyclerView) as RecyclerView
         recycler.layoutManager = LinearLayoutManager(this)
 /* val postaci = listOf("Ron Weasley", "Harry Potter", "Hermiona Granger")*/
-        val Ron = insta_class("Ron Weasley", "Gryffindor", "Jakiś cyctat o szczurze")
-        val Hermiona = insta_class("Hermiona Granger", "Gryffindor", "Krótka historia Hogwarty YOLO")
-        val Harry = insta_class("Harry Potter", "Gryffindor", "Nawet nie wiem jaki cytat by dać")
+        val Ron = insta_class("Ron Weasley", "Gryffindor", "Don't let the Muggles get you down!")
+        val Hermiona = insta_class("Hermiona Granger", "Gryffindor", "Twitchy little ferret, aren't you, Malfoy?")
+        val Harry = insta_class("Harry Potter", "Gryffindor", "I solemly swear I am up to no good!")
+        val Luna = insta_class ("Luna Lovegood", "", "")
+        val Albus = insta_class ("Albus Dumbledore", "", "It takes a great deal of bravery to stand up to our enemies, but just as much to stand up to our friends")
 
         val listapostaci = ArrayList<insta_class>()
         listapostaci.add(Ron)

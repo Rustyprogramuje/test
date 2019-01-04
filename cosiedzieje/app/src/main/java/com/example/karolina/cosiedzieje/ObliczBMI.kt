@@ -61,5 +61,8 @@ class ObliczBMI : AppCompatActivity() {
             startActivity(intent)
         }
 
+// < 18,5 niedowaga
+        // 18.5 - 24.99 - waga prawidłowa
+        // 25.0 nadwaga
     }
 }
