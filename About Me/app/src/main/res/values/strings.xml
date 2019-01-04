@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">About Me</string>
+    <string name="name">Karolina Brożek</string>
+    <string name="yellow_star">yellow_star</string>
+    <string name="bio">Siemanko, jestem Ina.
+        \n\nNie wiem co mam napisać.
+        \n\nDobrze było by, żeby to było mądre,
+        \na tu nic z tego.
+        \n\nTo może jakiś cytat napiszę.
+        \n\nI tak chodzi tylko o to, by tekst był długi.
+        \n\nBy dało się go przewinąć.
+        \nNikogo nie interesuje co tu napiszę.
+        \nWciąż za mało tekstu.
+        \n\nJeszcze może coś dopiszę.
+        \nCiekawe coś tu wyszło.
+        \n\n\nENDE
+    </string>
+    <string name="what_is_your_nickname">What is your nickname?</string>
+    <string name="done">DONE</string>
+</resources>
