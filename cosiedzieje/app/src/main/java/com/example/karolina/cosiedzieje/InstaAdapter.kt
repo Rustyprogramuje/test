@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.TextureView
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import kotlinx.android.synthetic.main.instalayout.view.*
 
@@ -41,6 +42,7 @@ class CustomViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val imie = itemView.findViewById<TextView>(R.id.imiepostaci) as TextView
         val dom = itemView.findViewById<TextView>(R.id.zjakiegodomu) as TextView
         val cyt = itemView.findViewById<TextView>(R.id.cytat) as TextView
+        val pic: ImageView = itemView.findViewById(R.id.zdjeciepostaci) as ImageView
         imie.text = insta.imie
         dom.text = insta.dom
         cyt.text = insta.cytat
