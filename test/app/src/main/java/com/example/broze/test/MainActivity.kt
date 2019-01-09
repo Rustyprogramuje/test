@@ -1,5 +1,7 @@
 package com.example.broze.test
 
+import android.content.Context
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -16,6 +18,16 @@ class MainActivity : AppCompatActivity() {
 
             BookLog()
 
+            val sharedPref = this.getSharedPreferences("com.example.broze.test", Context.MODE_PRIVATE)
+           // sharedPref.edit().putString("StoreBookLog", book_log.text.toString()).apply()
+            val storedbooklog = sharedPref.getString("StoreBookLog", "")
+            oldLog.text = storedbooklog
+
+
+
+        }
+        findViewById<Button>(R.id.button2).setOnClickListener {
+            change_act()
         }
     }
 
@@ -29,13 +41,22 @@ class MainActivity : AppCompatActivity() {
             author = author.toString(),
             pages = pagesInt
         )
+
         if (book.pages == null) {
             book_log.text = "Book: " + book.title + " Author: " + book.author.toString() + " No pages read."
         } else {
             book_log.text = "Book: " + book.title + " Author: " + book.author.toString() + " Pages read: " +
                     book.pages.toString()
         }
+
     }
+    fun change_act () {
+        val inent = Intent (applicationContext,Main2Activity::class.java)
+        inent.putExtra("book_log_history", book_log.text)
+        startActivity(inent)
+
+    }
+
 }
 
 
